@@ -76,6 +76,7 @@ def load_students(filename = "students.csv")
       @students << {name: name, cohort: cohort.to_sym}
     end
   end
+  puts "Loaded #{@students.count} students from #{filename}"
 end
 def auto_load_students
   filename = ARGV.first
